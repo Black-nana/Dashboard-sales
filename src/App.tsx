@@ -14,7 +14,7 @@ function App() {
           element={<SharedLayout />}>
           <Route
             index
-            path="/dashboard"
+            path="/"
             element={<Dashboard />}
           />
           <Route
