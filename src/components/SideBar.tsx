@@ -15,7 +15,7 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`relative py-12 px-10 flex flex-col justify-evenly items-center border border-r-1 w-1/5 h-full ${
+      className={`relative py-2 px-10 flex flex-col items-center border border-r-1 w-1/5 h-screen ${
         expanded ? 'w-1/5' : 'w-12'
       }`}>
       <div className="flex justify-center items-center gap-4">
@@ -28,7 +28,7 @@ const SideBar: React.FC = () => {
           className={`font-extrabold text-3xl ${
             expanded ? 'inline-block' : 'hidden'
           }`}>
-          Mateen
+          Ann
         </header>
       </div>
 
@@ -60,18 +60,18 @@ const SideBar: React.FC = () => {
         </button>
       </div>
 
-      <div className="mt-10 flex flex-col text-slate-500  space-y-6 text-base">
+      <div className="mb-5 flex flex-col text-slate-500   text-base">
         {NavLinks.map((link) => (
           <div
             key={link.title}
-            className={`py-2 mt-3 px-4 flex  gap-2 hover:bg-[#716acd] hover:text-white rounded-lg cursor-pointer transition-all duration-200 group ${
+            className={`py-2 mt-3 px-4 flex  hover:bg-[#716acd] hover:text-white rounded-lg cursor-pointer transition-all duration-200 group ${
               active === link.title ? 'bg-[#716acd] text-white' : ''
             }`}
             onClick={() => setActiveBgColor(link.title)}>
             <div>
               {React.createElement(link.icon) }
               {!expanded && (
-                <div className="-mt-6 absolute left-full -translate-x-3 rounded-md px-2 py-2 ml-6 bg-indigo-100 text-indigo-800 text-sm opacity-0 transition-colors group-hover:opacity-100 group-hover:translate-x-0 invisible group-hover:visible">
+                <div className="w-full -mt-6 absolute left-full -translate-x-3 rounded-md px-2 py-2 ml-6 bg-indigo-100 text-indigo-800 text-sm opacity-0 transition-colors group-hover:opacity-100 group-hover:translate-x-0 invisible group-hover:visible">
                   {link.title}
                 </div>
               )}
@@ -86,8 +86,9 @@ const SideBar: React.FC = () => {
           </div>
         ))}
       </div>
+
     </div>
-        <div className={`${expanded ? '':'hidden'}`}>
+        <div className={`h-fit ${expanded ? '':'hidden'}`}>
           <Badge />
         </div>
     </div>

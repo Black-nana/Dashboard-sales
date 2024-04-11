@@ -10,7 +10,7 @@ const Dashboard:React.FC = () => {
         <Sales />
         <Map />
         </div>
-        <div className='my-10 bg-slate-100 p-4 rounded-lg'>
+        <div className='my-5 bg-slate-100 p-4 rounded-lg'>
             <Table />
         </div>
     </div>

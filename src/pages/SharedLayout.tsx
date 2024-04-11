@@ -5,12 +5,12 @@ import React from 'react';
 
 const SharedLayout:React.FC = () => {
   return (
-    <div className="flex w-screen h-screen items-start overflow-hidden">
+    <div className="flex w-screen h-screen items-start ">
       <SideBar />
       <div className='w-full px-10'>
         {' '}
         <NavBar />
-        <div className='overflow-hidden'>
+        <div className=''>
         <Outlet />
         </div>
       </div>
