@@ -10,11 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          index={false}
           path="/"
           element={<SharedLayout />}>
           <Route
-            index={true}
+            index
             path="/dashboard"
             element={<Dashboard />}
           />
