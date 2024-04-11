@@ -3,6 +3,7 @@ import { PieChart, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { NavLinks } from './data/Navlinks';
 import logo from '../assets/dummy logo.png';
+import Badge from './Badge';
 
 const SideBar: React.FC = () => {
   const [active, setActive] = useState<string | null>(null);
@@ -14,7 +15,7 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`relative py-12 px-10 flex flex-col items-center border border-r-1 w-1/5 h-full ${
+      className={`relative py-12 px-10 flex flex-col justify-evenly items-center border border-r-1 w-1/5 h-full ${
         expanded ? 'w-1/5' : 'w-12'
       }`}>
       <div className="flex justify-center items-center gap-4">
@@ -31,7 +32,8 @@ const SideBar: React.FC = () => {
         </header>
       </div>
 
-      <div className="flex gap-4 justify-center items-center mx-4 ">
+    <div>
+    <div className="flex gap-4 justify-center items-center mx-4 ">
         <Link to={'/dashboard'}>
         <div
           className={`w-fit font-bold flex text-2xl bg-[#716acd] py-2 px-2 -ml-2 rounded-xl text-white text-center overflow-hidden transition-all duration-200 group`}>
@@ -84,6 +86,10 @@ const SideBar: React.FC = () => {
           </div>
         ))}
       </div>
+    </div>
+        <div className={`${expanded ? '':'hidden'}`}>
+          <Badge />
+        </div>
     </div>
   );
 };
