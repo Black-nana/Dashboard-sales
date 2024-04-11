@@ -5,6 +5,8 @@ import { NavLinks } from './data/Navlinks';
 import logo from '../assets/dummy logo.png';
 import Badge from './Badge';
 
+
+
 const SideBar: React.FC = () => {
   const [active, setActive] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<boolean>(true);
@@ -28,7 +30,7 @@ const SideBar: React.FC = () => {
           className={`font-extrabold text-3xl ${
             expanded ? 'inline-block' : 'hidden'
           }`}>
-          Ann
+          Mateen
         </header>
       </div>
 
@@ -89,7 +91,7 @@ const SideBar: React.FC = () => {
 
     </div>
         <div className={`h-fit ${expanded ? '':'hidden'}`}>
-          <Badge />
+          <Badge/>
         </div>
     </div>
   );
