@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SalesReport = () => {
+const SalesReport:React.FC = () => {
   return (
     <div>SalesReport</div>
   )

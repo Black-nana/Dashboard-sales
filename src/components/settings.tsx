@@ -1,6 +1,6 @@
 import React from 'react'
 
-const settings = () => {
+const settings:React.FC = () => {
   return (
     <div>settings</div>
   )
