@@ -9,7 +9,7 @@ import {
 
 const Sales: React.FC = () => {
   return (
-    <div className="w-full bg-slate-50 rounded-lg p-4 ">
+    <div className="w-full bg-slate-50 rounded-lg p-4  ">
       <div className="w-full flex justify-between mb-10 ">
         <div className="flex flex-col">
           <h1 className="text-xl font-semibold text-slate-900">
@@ -29,8 +29,8 @@ const Sales: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-wrap justify-start items-start gap-1 mt-4">
-      <div className="flex flex-col bg-pink-100 rounded-xl p-2">
+      <div className="w-full flex flex-wrap justify-around items-start gap-1 mt-4">
+        <div className="max-sm:w-full items-center flex  flex-col bg-pink-100 rounded-xl p-2">
           <div className="w-fit p-1 rounded-full bg-pink-400">
             <AreaChart
               size={20}
@@ -46,7 +46,7 @@ const Sales: React.FC = () => {
             +8% from yesterday
           </p>
         </div>
-        <div className="flex flex-col bg-orange-100 rounded-xl p-2">
+        <div className="max-sm:w-full items-center flex flex-col bg-orange-100 rounded-xl p-2">
           <div className="w-fit p-1 rounded-full bg-orange-400">
             <ClipboardPenLine
               size={20}
@@ -62,7 +62,7 @@ const Sales: React.FC = () => {
             +8% from yesterday
           </p>
         </div>
-        <div className="flex flex-col bg-green-100 rounded-xl p-2">
+        <div className="max-sm:w-full items-center flex flex-col bg-green-100 rounded-xl p-2">
           <div className="w-fit p-1 rounded-full bg-green-400">
             <Tag
               size={20}
@@ -76,7 +76,7 @@ const Sales: React.FC = () => {
             +8% from yesterday
           </p>
         </div>
-        <div className="flex flex-col bg-purple-100 rounded-xl p-2">
+        <div className="max-sm:w-full items-center flex flex-col bg-purple-100 rounded-xl p-2">
           <div className="w-fit p-1 rounded-full bg-purple-400">
             <UserPlus
               size={20}

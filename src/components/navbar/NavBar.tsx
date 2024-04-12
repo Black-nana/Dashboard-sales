@@ -54,7 +54,11 @@ const NavBar: React.FC = () => {
             </div>
           </ul>
         </div>
-        <Link to={'/'} className="btn btn-ghost text-xl">DashBoard</Link>
+        <Link
+          to={'/'}
+          className="btn btn-ghost text-xl">
+          DashBoard
+        </Link>
       </div>
       <div className="w-full flex justify-between gap-2">
         <div className="form-control relative hidden md:block lg:block">
@@ -73,15 +77,11 @@ const NavBar: React.FC = () => {
         <div>
           <ul className="menu menu-horizontal px-1">
             <li>
-              <details>
-                <summary>Parent</summary>
+              <details className='flex-col gap-4'>
+                <summary>Language</summary>
                 <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
+                  <li className="py-2">English</li>
+                  <li>Other Language</li>
                 </ul>
               </details>
             </li>
