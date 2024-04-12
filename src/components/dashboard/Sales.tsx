@@ -29,7 +29,7 @@ const Sales: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-wrap justify-start items-start gap-2 mt-4">
+      <div className="w-full flex flex-wrap justify-start items-start gap-1 mt-4">
       <div className="flex flex-col bg-pink-100 rounded-xl p-2">
           <div className="w-fit p-1 rounded-full bg-pink-400">
             <AreaChart
