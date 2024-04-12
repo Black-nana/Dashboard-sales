@@ -17,7 +17,7 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`relative py-2 px-10 flex flex-col items-center border border-r-1 w-1/5 h-screen ${
+      className={`relative py-2 px-10 lg:flex hidden flex-col items-center border border-r-1 w-1/5 h-screen ${
         expanded ? 'w-1/5' : 'w-12'
       }`}>
       <div className="flex justify-center items-center gap-4">

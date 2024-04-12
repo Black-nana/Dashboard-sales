@@ -6,7 +6,7 @@ import Table from './dashboard/Table'
 const Dashboard:React.FC = () => {
   return (
     <div>
-        <div className="grid grid-cols-[2fr,1fr] ">
+        <div className="grid lg:grid-cols-[2fr,1fr] ">
         <Sales />
         <Map />
         </div>
