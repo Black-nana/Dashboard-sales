@@ -54,7 +54,7 @@ const NavBar: React.FC = () => {
             </div>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">DashBoard</a>
+        <Link to={'/'} className="btn btn-ghost text-xl">DashBoard</Link>
       </div>
       <div className="w-full flex justify-between gap-2">
         <div className="form-control relative hidden md:block lg:block">
