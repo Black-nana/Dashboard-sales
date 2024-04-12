@@ -36,7 +36,7 @@ const SideBar: React.FC = () => {
 
     <div>
     <div className="flex gap-4 justify-center items-center mx-4 ">
-        <Link to={'/'}>
+        <Link to={'/dashboard'}>
         <div
           className={`w-fit font-bold flex text-xl bg-[#716acd] py-2 px-2 -ml-2 rounded-xl text-white text-center overflow-hidden transition-all duration-200 group`}>
           <PieChart

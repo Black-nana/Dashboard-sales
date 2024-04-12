@@ -6,41 +6,58 @@ import Products from './components/Products';
 import Dashboard from './components/Dashboard';
 import Messages from './components/Messages';
 import Settings from './components/Settings';
+import Authentication from './pages/Authentication';
+import SignUp from './components/Authentications/signup/SignUp';
+import SignIn from './components/Authentications/signin/SignIn';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
+
+      <Route
           path="/"
+          element={<Authentication />}>
+          <Route
+            path="/"
+            element={<SignIn />}
+          />
+          <Route
+            path="/signup"
+            element={<SignUp />}
+          />
+        </Route>
+
+        <Route
+          path="/dashboard"
           element={<SharedLayout />}>
           <Route
             index
-            path="/"
             element={<Dashboard />}
           />
           <Route
-            path="/leaderboard"
+            path="leaderboard"
             element={<LeaderBoard />}
           />
           <Route
-            path="/messages"
+            path="messages"
             element={<Messages />}
           />
           <Route
-            path="/settings"
+            path="settings"
             element={<Settings />}
           />
-          
+
           <Route
-            path="/order"
+            path="order"
             element={<Order />}
           />
           <Route
-            path="/products"
+            path="products"
             element={<Products />}
           />
         </Route>
+        
       </Routes>
     </BrowserRouter>
   );

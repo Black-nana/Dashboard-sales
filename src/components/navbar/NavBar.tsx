@@ -55,7 +55,7 @@ const NavBar: React.FC = () => {
           </ul>
         </div>
         <Link
-          to={'/'}
+          to={'/dashboard'}
           className="btn btn-ghost text-xl">
           DashBoard
         </Link>
