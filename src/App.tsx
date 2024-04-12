@@ -4,6 +4,8 @@ import Order from './components/Order';
 import LeaderBoard from './components/LeaderBoard';
 import Products from './components/Products';
 import Dashboard from './components/Dashboard';
+import Messages from './components/Messages';
+import Settings from './components/Settings';
 
 function App() {
   return (
@@ -21,6 +23,15 @@ function App() {
             path="/leaderboard"
             element={<LeaderBoard />}
           />
+          <Route
+            path="/messages"
+            element={<Messages />}
+          />
+          <Route
+            path="/settings"
+            element={<Settings />}
+          />
+          
           <Route
             path="/order"
             element={<Order />}

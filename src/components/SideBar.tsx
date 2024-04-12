@@ -17,7 +17,7 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`relative py-2 px-10 lg:flex hidden flex-col items-center border border-r-1 w-1/5 h-screen ${
+      className={`relative py-2 px-10  lg:flex hidden flex-col items-center border border-r-1 w-1/5 h-screen ${
         expanded ? 'w-1/5' : 'w-12'
       }`}>
       <div className="flex justify-center items-center gap-4">
@@ -36,11 +36,10 @@ const SideBar: React.FC = () => {
 
     <div>
     <div className="flex gap-4 justify-center items-center mx-4 ">
-        <Link to={'/dashboard'}>
+        <Link to={'/'}>
         <div
-          className={`w-fit font-bold flex text-2xl bg-[#716acd] py-2 px-2 -ml-2 rounded-xl text-white text-center overflow-hidden transition-all duration-200 group`}>
+          className={`w-fit font-bold flex text-xl bg-[#716acd] py-2 px-2 -ml-2 rounded-xl text-white text-center overflow-hidden transition-all duration-200 group`}>
           <PieChart
-            size={32}
             className="inline-block mr-2 text-[#f1f7fa]"
           />
           <span className={`${expanded ? 'inline-block' : 'hidden'}`}>
@@ -62,7 +61,7 @@ const SideBar: React.FC = () => {
         </button>
       </div>
 
-      <div className="mb-5 flex flex-col text-slate-500   text-base">
+      <div className="mb-5 flex flex-col text-slate-500 px-4   text-base">
         {NavLinks.map((link) => (
           <div
             key={link.title}
