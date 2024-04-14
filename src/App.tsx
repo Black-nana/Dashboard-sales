@@ -10,56 +10,29 @@ import Authentication from './pages/Authentication';
 import SignUp from './components/Authentications/signup/SignUp';
 import SignIn from './components/Authentications/signin/SignIn';
 
+
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+    <Routes>
+      {/* Authentication Routes */}
+      <Route path="/" element={<Authentication />}>
+        <Route index element={<SignIn />} />
+        <Route path="signup" element={<SignUp />} />
+      </Route>
+      
+      {/* Dashboard Routes */}
+      <Route path="/dashboard" element={<SharedLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="leaderboard" element={<LeaderBoard />} />
+        <Route path="messages" element={<Messages />} />
+        <Route path="settings" element={<Settings />} />
+        <Route path="order" element={<Order />} />
+        <Route path="products" element={<Products />} />
+      </Route>
 
-      <Route
-          path="/"
-          element={<Authentication />}>
-          <Route
-            path="/"
-            element={<SignIn />}
-          />
-          <Route
-            path="/signup"
-            element={<SignUp />}
-          />
-        </Route>
-
-        <Route
-          path="/dashboard"
-          element={<SharedLayout />}>
-          <Route
-            index
-            element={<Dashboard />}
-          />
-          <Route
-            path="leaderboard"
-            element={<LeaderBoard />}
-          />
-          <Route
-            path="messages"
-            element={<Messages />}
-          />
-          <Route
-            path="settings"
-            element={<Settings />}
-          />
-
-          <Route
-            path="order"
-            element={<Order />}
-          />
-          <Route
-            path="products"
-            element={<Products />}
-          />
-        </Route>
-        
-      </Routes>
-    </BrowserRouter>
+    </Routes>
+  </BrowserRouter>
   );
 }
 

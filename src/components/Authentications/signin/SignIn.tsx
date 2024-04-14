@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -7,6 +7,9 @@ import image from '../../../assets/signin.jpeg';
 import logo from '../../../assets/dummy logo.png';
 import toast, { Toaster } from 'react-hot-toast';
 import Loading from '../../loaders/Loading';
+import ForgetPassword from '../forgetpassword/ForgetPassword';
+import ResetPassword from '../forgetpassword/ResetPassword';
+
 
 interface FormValues {
   username: string;
@@ -14,12 +17,20 @@ interface FormValues {
 }
 
 const validationSchema: Yup.Schema<FormValues> = Yup.object().shape({
-    username: Yup.string().required('username is required'),
-    password: Yup.string().required('Password is required'),
+  username: Yup.string().required('username is required'),
+  password: Yup.string().required('Password is required'),
 });
 
 const SignIn: React.FC = () => {
- const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [showForgetpassword, setShowForgetPassword] = useState<boolean>(false);
+  const [showResetPassword, setShowResetPassword] = useState<boolean>(false);
+
+  const handleForgetPassword = () => {
+    setShowForgetPassword(true);
+  }
+
+ 
 
   const handleSubmit = (values: FormValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
     console.log(values);
@@ -28,13 +39,16 @@ const SignIn: React.FC = () => {
         icon: '👏',
       });
       setSubmitting(false);
-        navigate('/dashboard');
+      navigate('/dashboard');
     }, 1000); // Simulating asynchronous submission
   };
 
   return (
     <div className="w-full h-screen grid md:grid-cols-2 lg:grid-cols-[2fr,3fr]">
       <Toaster />
+     {showForgetpassword && <ForgetPassword setShowForgetPassword={setShowForgetPassword} setShowResetPassword={setShowResetPassword}/>}
+
+     {showResetPassword && <ResetPassword setShowResetPassword={setShowResetPassword} />}
       <div className="w-full bg-slate-50 grid items-center p-8">
         <Formik
           initialValues={{ username: '', password: '' }}
@@ -82,9 +96,16 @@ const SignIn: React.FC = () => {
               </button>
               <p>
                 Don't have an account?{' '}
-                <Link to={'/signup'} className="text-blue-600">
+                <Link to={'signup'} className="text-blue-600">
                   Sign Up
                 </Link>
+              </p>
+              <p>
+                <div onClick={handleForgetPassword}>
+                <div className="text-blue-600 cursor-pointer" >
+                  Forget Password?
+                </div>
+                </div>
               </p>
             </Form>
           )}
@@ -95,6 +116,7 @@ const SignIn: React.FC = () => {
           <img src={image} alt="sign image" />
         </div>
       </div>
+
     </div>
   );
 };

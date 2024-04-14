@@ -35,4 +35,22 @@ export const SignupData = {
       type: "password",
     },
   };
+
+  export const ForgetPasswordData = {
+    email: {
+      label: "Email",
+      type: "email",
+    },
+  };
+
+  export const ResetPasswordData = {
+    password: {
+      label: "Password",
+      type: "password",
+    },
+    confirmPassword: {
+      label: "Confirm Password",
+      type: "password",
+    },
+  };
   
