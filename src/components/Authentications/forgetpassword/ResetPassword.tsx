@@ -57,7 +57,7 @@ const validationSchema = Yup.object().shape({
   position="top-center"
   reverseOrder={false}
 />
-      <div className="w-full max-w-md bg-white rounded-lg p-6">
+      <div className="w-full max-w-md mx-10 bg-white rounded-lg p-6">
         <div className="flex justify-between items-center mb-4">
           <h2>Forget Password</h2>
           <button onClick={() => setShowResetPassword(false)}>
