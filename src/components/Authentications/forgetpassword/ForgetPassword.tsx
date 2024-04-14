@@ -44,7 +44,7 @@ const ForgetPassword: React.FC<{ setShowForgetPassword: (show: boolean) => void,
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <Toaster position="top-center" reverseOrder={false} />
      
-      <div className="w-full max-w-md bg-white rounded-lg p-6">
+      <div className="w-full max-w-md mx-10 bg-white rounded-lg p-6">
         <div className="flex justify-between items-center mb-4">
           <h2>Forget Password</h2>
           <button onClick={() => setShowForgetPassword(false)}>
