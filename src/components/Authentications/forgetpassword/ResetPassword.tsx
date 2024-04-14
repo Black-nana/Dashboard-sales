@@ -59,7 +59,10 @@ const validationSchema = Yup.object().shape({
 />
       <div className="w-full max-w-md mx-10 bg-white rounded-lg p-6">
         <div className="flex justify-between items-center mb-4">
-          <h2>Forget Password</h2>
+          <h2>
+            Reset Password
+          </h2>
+
           <button onClick={() => setShowResetPassword(false)}>
             <X size={24} />
           </button>
@@ -75,7 +78,7 @@ const validationSchema = Yup.object().shape({
                 <ErrorMessage name={key} component="div" className="text-red-600" />
               </div>
             ))}
-            <button type="submit" disabled={loading} className="mt-4 bg-blue-600 text-white rounded-md py-2 px-4">
+            <button type="submit" disabled={loading} className="w-full grid place-items-center mt-4 bg-blue-600 text-white rounded-md py-2 px-4">
               {loading ? <Loading/> : "Submit"}
             </button>
           </Form>

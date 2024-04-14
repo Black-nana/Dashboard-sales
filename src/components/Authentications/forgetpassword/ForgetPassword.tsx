@@ -46,10 +46,15 @@ const ForgetPassword: React.FC<{ setShowForgetPassword: (show: boolean) => void,
      
       <div className="w-full max-w-md mx-10 bg-white rounded-lg p-6">
         <div className="flex justify-between items-center mb-4">
+          <div>
           <h2>Forget Password</h2>
+          </div>
           <button onClick={() => setShowForgetPassword(false)}>
             <X size={24} />
           </button>
+        </div>
+        <div className="mb-4">
+        <p className="text-slate-500">An E-mial will be sent to your account to reset your password</p>
         </div>
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
           <Form>
@@ -62,7 +67,7 @@ const ForgetPassword: React.FC<{ setShowForgetPassword: (show: boolean) => void,
                 <ErrorMessage name={key} component="div" className="text-red-600" />
               </div>
             ))}
-            <button type="submit" disabled={loading} className="mt-4 bg-blue-600 text-white rounded-md py-2 px-4">
+            <button type="submit" disabled={loading} className="w-full grid place-items-center  mt-4 bg-blue-600 text-white rounded-md py-2 px-4">
               {loading ? <Loading /> : "Submit"}
             </button>
           </Form>

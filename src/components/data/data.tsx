@@ -45,7 +45,7 @@ export const SignupData = {
 
   export const ResetPasswordData = {
     password: {
-      label: "Password",
+      label: "new Password",
       type: "password",
     },
     confirmPassword: {
