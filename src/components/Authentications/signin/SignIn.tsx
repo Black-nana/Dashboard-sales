@@ -45,7 +45,7 @@ const SignIn: React.FC = () => {
 
   return (
     <div className="w-full h-screen grid md:grid-cols-2 lg:grid-cols-[2fr,3fr]">
-      <Toaster />
+       <Toaster position="top-center" reverseOrder={false} />
      {showForgetpassword && <ForgetPassword setShowForgetPassword={setShowForgetPassword} setShowResetPassword={setShowResetPassword}/>}
 
      {showResetPassword && <ResetPassword setShowResetPassword={setShowResetPassword} />}
