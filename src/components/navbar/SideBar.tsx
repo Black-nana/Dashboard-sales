@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { PieChart, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { NavLinks } from './data/Navlinks';
+import { NavLinks } from '../data/Navlinks';
 import logo from '../assets/dummy logo.png';
-import Badge from './Badge';
+import Badge from '../Badge';
 
 
 

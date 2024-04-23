@@ -1,7 +1,7 @@
 import React from 'react'
-import Sales from './dashboard/Sales'
-import Map from './dashboard/Map'
-import Table from './dashboard/Table'
+import Sales from './Sales'
+import Map from './Map'
+import Table from './Table'
 
 const Dashboard:React.FC = () => {
   return (

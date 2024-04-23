@@ -3,7 +3,7 @@ import SharedLayout from './pages/SharedLayout';
 import Order from './components/Order';
 import LeaderBoard from './components/LeaderBoard';
 import Products from './components/Products';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/dashboard/Dashboard';
 import Messages from './components/Messages';
 import Settings from './components/Settings';
 import Authentication from './pages/Authentication';
