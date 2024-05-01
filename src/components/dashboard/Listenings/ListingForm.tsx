@@ -1,5 +1,5 @@
 import React from 'react'
-import {ListeningFormData} from './ListeningsFormData'
+import {ListeningFormData} from './ListingsFormData'
 import { X } from 'lucide-react'
 
 
@@ -19,7 +19,7 @@ const ListeningForm: React.FC<{ setShowForm: (show: boolean) => void }> = ({
         </div>
         <header
           className="text-2xl text-slate-700 font-bold py-4"
-        >Add Listening Information</header>
+        >Add New Listing </header>
         <form action="">
             {ListeningFormData.map((fields,index)=>{
                 return(
@@ -41,7 +41,7 @@ const ListeningForm: React.FC<{ setShowForm: (show: boolean) => void }> = ({
             })}
             <div className='py-4'>
                 <button className="bg-[#716acd] text-white hover:bg-[#8d98d9]  py-2 px-4 rounded-lg font-sans">
-                    Add Listening
+                    Add Listing
                 </button>
             </div>
         </form>
