@@ -4,7 +4,7 @@ import { Share2,Eye, Upload } from 'lucide-react';
 
 const Table: React.FC = () => {
   return (
-    <div className='w-full bg-white'>
+    <div className='w-full bg-white py-10'>
       <div className='flex gap-6 justify-end mr-5'>
         <div className='flex gap-2 justify-center items-center'>
           <label htmlFor="search" className='font-semibold'>Search</label>
@@ -23,7 +23,7 @@ const Table: React.FC = () => {
           </div>
       </div>
       <div className="w-full">
-        <table className="table">
+        <table className="table py-6">
           {/* head */}
           <thead>
             <tr>

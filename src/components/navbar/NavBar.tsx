@@ -11,7 +11,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-[2fr,3fr] bg-base-100 py-4">
+    <div className="grid grid-cols-[2fr,3fr] bg-base-100 py-4 px-10">
       <div className="flex-1">
         <div className="dropdown">
           <div

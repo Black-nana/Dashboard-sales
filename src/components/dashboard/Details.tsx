@@ -5,7 +5,7 @@ const Details: React.FC = () => {
   return (
     <div>
       {/* card */}
-      <div className="w-full">
+      <div className="w-full px-6">
         <div className="w-full grid lg:grid-cols-4 gap-4">
           {DetailsData.map((detail, index) => (
             <div

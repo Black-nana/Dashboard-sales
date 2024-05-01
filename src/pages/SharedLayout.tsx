@@ -5,7 +5,7 @@ import React from 'react';
 
 const SharedLayout:React.FC = () => {
   return (
-    <div className="flex w-full h-screen border-8 border-orange-500 items-start overflow-y-hidden ">
+    <div className="flex w-full h-screen  items-start overflow-y-hidden ">
       <SideBar />
       <div className='w-full '>
         {' '}
