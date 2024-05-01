@@ -1,17 +1,21 @@
 import React from 'react'
-import Sales from './Sales'
-import Map from './Map'
-import Table from './Table'
+// import Sales from './Sales'
+
+// import Table from './Table'
+import Details from './Details'
+import Index from './Listenings/Index'
 
 const Dashboard:React.FC = () => {
   return (
-    <div>
-        <div className="grid lg:grid-cols-[2fr,1fr] ">
-        <Sales />
-        <Map />
+    <div className=' w-full '>
+        <div className="grid place-items-center ">
+        {/* <Sales /> */}
+        <Details />
+        
         </div>
-        <div className='my-5 bg-slate-100 p-4 rounded-lg'>
-            <Table />
+        <div className='my-5 p-4 rounded-lg'>
+          <Index/>
+            {/* <Table /> */}
         </div>
     </div>
   )

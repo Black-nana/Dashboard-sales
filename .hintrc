@@ -21,6 +21,8 @@
       {
         "button-name": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "axe/forms": "off"
   }
 }

@@ -74,19 +74,7 @@ const NavBar: React.FC = () => {
             />
           </div>
         </div>
-        <div>
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <details className='flex-col gap-4'>
-                <summary>Language</summary>
-                <ul className="p-2">
-                  <li className="py-2">English</li>
-                  <li>Other Language</li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
+       
         <div className="dropdown dropdown-end">
           <div
             tabIndex={0}

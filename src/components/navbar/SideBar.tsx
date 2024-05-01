@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PieChart, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { NavLinks } from '../data/Navlinks';
-import logo from '../assets/dummy logo.png';
+import logo from '../../assets/dummy logo.png';
 import Badge from '../Badge';
 
 
@@ -17,8 +17,8 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`relative py-2 px-10  lg:flex hidden flex-col items-center border border-r-1 w-1/5 h-screen ${
-        expanded ? 'w-1/5' : 'w-12'
+      className={`relative py-2 px-10  lg:flex hidden flex-col items-center border border-r-1 w-[15%] h-screen ${
+        expanded ? 'w-[15%]' : 'w-6'
       }`}>
       <div className="flex justify-center items-center gap-4">
         <img
