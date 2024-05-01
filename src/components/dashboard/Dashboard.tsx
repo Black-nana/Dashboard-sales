@@ -7,7 +7,7 @@ import Index from './Listenings/Index'
 
 const Dashboard:React.FC = () => {
   return (
-    <div className=' w-full '>
+    <div className=' w-full h-screen overflow-y-auto '>
         <div className="grid place-items-center ">
         {/* <Sales /> */}
         <Details />

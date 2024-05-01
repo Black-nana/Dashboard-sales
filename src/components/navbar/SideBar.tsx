@@ -3,7 +3,7 @@ import { PieChart, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { NavLinks } from '../data/Navlinks';
 import logo from '../../assets/dummy logo.png';
-import Badge from '../Badge';
+// import Badge from '../Badge';
 
 
 
@@ -17,7 +17,7 @@ const SideBar: React.FC = () => {
 
   return (
     <div
-      className={`relative py-2 px-10  lg:flex hidden flex-col items-center border border-r-1 w-[15%] h-screen ${
+      className={`relative py-2 px-10  lg:flex hidden flex-col items-center border border-r-1 h-full ${
         expanded ? 'w-[15%]' : 'w-6'
       }`}>
       <div className="flex justify-center items-center gap-4">
@@ -54,7 +54,7 @@ const SideBar: React.FC = () => {
         </Link>
 
         <button
-          className="border-2 rounded-xl py-1 text-[#ffff] bg-[#716acd] absolute -right-4 top-12 transition-all duration-200 "
+          className="z border-2 rounded-xl py-1 text-[#ffff] bg-[#716acd] absolute -right-4 top-12 transition-all duration-200 "
           onClick={() => setExpanded((curr) => !curr)}
           aria-label={expanded ? 'Collapse sidebar' : 'Expand sidebar'}>
           {expanded ? <ChevronLeft size={25} /> : <ChevronRight size={25} />}
@@ -89,9 +89,9 @@ const SideBar: React.FC = () => {
       </div>
 
     </div>
-        <div className={`h-fit ${expanded ? '':'hidden'}`}>
+        {/* <div className={`h-fit ${expanded ? '':'hidden'}`}>
           <Badge/>
-        </div>
+        </div> */}
     </div>
   );
 };
