@@ -34,7 +34,7 @@ const ListeningForm: React.FC<{ setShowForm: (show: boolean) => void }> = ({
                   type={fields.type}
                   id={`field-${index}`}
                   placeholder={fields.placeholder}
-                  className="border-2 border-slate-300 p-2 rounded-md"
+                  className="border-2 border-slate-300 p-2 rounded-md w-full"
                 />
                     </div>
                 )
