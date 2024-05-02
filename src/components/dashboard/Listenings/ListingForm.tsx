@@ -9,7 +9,7 @@ const ListeningForm: React.FC<{ setShowForm: (show: boolean) => void }> = ({
 }) => {
  
   return (
-    <div className='w-1/2 border-2 shadow-lg p-4 rounded-lg'>
+    <div className='lg:w-1/2 border-2 shadow-lg p-4 rounded-lg'>
         <div className="flex justify-end">
             <button
             onClick={setShowForm.bind(null,false)}
