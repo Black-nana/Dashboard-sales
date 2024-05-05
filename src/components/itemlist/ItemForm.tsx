@@ -36,7 +36,7 @@ const ItemForm: React.FC<ItemFormProps> = ({ show, onClose }) => {
     <>
       {show && (
         <div className="w-full fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
-          <div className="w-1/2 bg-white p-6 rounded-lg shadow-md">
+          <div className="w-1/2 max-sm:w-5/6 bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-lg font-semibold mb-4">Add Item</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
