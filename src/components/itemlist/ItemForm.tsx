@@ -35,8 +35,8 @@ const ItemForm: React.FC<ItemFormProps> = ({ show, onClose }) => {
   return (
     <>
       {show && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="w-full fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
+          <div className="w-1/2 bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-lg font-semibold mb-4">Add Item</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -103,19 +103,19 @@ const ItemForm: React.FC<ItemFormProps> = ({ show, onClose }) => {
                   <option value="inactive">Inactive</option>
                 </select>
               </div>
-              <div className="flex justify-end">
+              <div className="flex gap-2 justify-end">
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-[#716acd] text-white rounded-md"
+                >
+                  Add Item
+                </button>
                 <button
                   type="button"
                   className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md mr-2"
                   onClick={onClose}
                 >
                   Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md"
-                >
-                  Add
                 </button>
               </div>
             </form>

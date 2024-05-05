@@ -9,7 +9,8 @@ interface Category {
 
 const categories: Category[] = [
   { id: '1', name: 'Category 1', items: ['Item 1', 'Item 2', 'Item 3'] },
-  { id: '2', name: 'Category 2', items: ['Item 4', 'Item 5'] },
+  { id: '2', name: 'Category 2', items: ['Item 4', 'Item 5','item 6'] },
+  { id: '3', name: 'Category 3', items: ['Item 7', 'Item 8','item 9'] },
   // Add more categories as needed
 ];
 
@@ -44,7 +45,7 @@ const CategoryList: React.FC = () => {
             </svg>
           </button>
           {openCategoryId === category.id && (
-            <ul className="mt-2 ml-4">
+            <ul className="mt-2 ml-4 bg-blue-50 p-2">
               {category.items.map((item, index) => (
                 <li key={index} className="text-gray-700">{item}</li>
               ))}
