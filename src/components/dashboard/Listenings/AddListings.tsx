@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import ListingForm from './ListingForm'
 
-const AddListenings:React.FC = () => {
+const AddListings:React.FC = () => {
   const [showForm, setShowForm] = useState<boolean>(false);
   const handleShowForm = () => {
     setShowForm(true);
@@ -26,4 +26,4 @@ const AddListenings:React.FC = () => {
   )
 }
 
-export default AddListenings
+export default AddListings

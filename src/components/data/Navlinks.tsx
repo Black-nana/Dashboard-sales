@@ -17,9 +17,9 @@ interface NavLink {
 
 export const NavLinks: NavLink[] = [
   {
-    title: 'Leaderboard',
+    title: 'Item List',
     icon: BarChart2,
-    path: '/leaderboard',
+    path: 'itemlist',
   },
   {
     title: 'Order',

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SharedLayout from './pages/SharedLayout';
 import Order from './components/Order';
-import LeaderBoard from './components/LeaderBoard';
+import LeaderBoard from './components/itemlist/ItemList';
 import Products from './components/Products';
 import Dashboard from './components/dashboard/Dashboard';
 import Messages from './components/Messages';
@@ -24,7 +24,7 @@ function App() {
       {/* Dashboard Routes */}
       <Route path="/dashboard" element={<SharedLayout />}>
         <Route index element={<Dashboard />} />
-        <Route path="leaderboard" element={<LeaderBoard />} />
+        <Route path="itemlist" element={<LeaderBoard />} />
         <Route path="messages" element={<Messages />} />
         <Route path="settings" element={<Settings />} />
         <Route path="order" element={<Order />} />

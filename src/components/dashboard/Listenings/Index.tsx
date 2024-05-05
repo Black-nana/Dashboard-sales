@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from './table/Table'
-import AddListenings from './AddListenings'
+import AddListenings from './AddListings'
 
 const Index:React.FC = () => {
   return (
