@@ -24,26 +24,26 @@ export const NavLinks: NavLink[] = [
   {
     title: 'Order',
     icon: ShoppingCart,
-    path: '/order',
+    path: 'order',
   },
   {
     title: 'Products',
     icon: ClipboardList,
-    path: '/products',
+    path: 'products',
   },
   {
     title: 'Messages',
     icon: MessageSquareMore,
-    path: '/messages',
+    path: 'messages',
   },
   {
     title: 'Settings',
     icon: Settings,
-    path: '/settings',
+    path: 'settings',
   },
   {
     title: 'Sign Out',
     icon: LogOut,
-    path: '/signout',
+    path: 'signout',
   },
 ];
